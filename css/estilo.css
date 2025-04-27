@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #BF84C2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  background-color: #723875;
+  position: sticky;
+  top: 80px;
+  z-index: 998;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#sessao1 {
+  background-color: white;
+}
+
+.bichos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.bicho {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+}
+
+.bicho img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#sessao2 {
+  background: linear-gradient(90deg, #9DC183 30%, #DEFFC7 100%);
+}
+
+footer {
+  background-color: #BF84C2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bichos {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1921px) {
+  body {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
+
+.bicho img {
+  width: 100%;        
+  height: 200px;     
+  object-fit: cover;  
+  border-radius: 8px; 
+  margin-top: 10px;   
+}
+
+
