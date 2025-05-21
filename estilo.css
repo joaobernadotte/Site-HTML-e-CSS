@@ -209,6 +209,132 @@ section {
   line-height: 1.5;
 }
 
+#sessao-formularios {
+  background-color: #fdfdfd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.formularios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formulario {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #723875;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #723875;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #5a2a5e;
+}
+
+
+.sessao6 {
+  background-color: #ffffff;
+  padding: 2rem;
+  scroll-margin-top: 90px;
+  text-align: center;
+}
+
+.sessao6 h2 {
+  font-size: 2rem;
+  color: #723875;
+  margin-bottom: 2rem;
+}
+
+.relatos {
+  display: grid;
+  grid-template-areas:
+    "img1 img2"
+    "img1 img3"
+    "img4 img5";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .relatos {
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+    grid-template-columns: 1fr;
+  }
+}
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+
+.imagem-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 4 / 3;
+}
 
 footer {
   background-color: #BF84C2;
