@@ -17,25 +17,54 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+
+  <style>
+      html {
+          scroll-behavior: smooth;
+        }
+  </style>
+  </head>
 <body>
 
     <header>
-        <div class="logo-container">
-          <img src="imagens/logo.png" alt="Logo do site">
-          <h1>Poisonous Life</h1>
-        </div>
-    </header>
+  
+</header>
+<nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(90deg, #2c3e50, #4ca1af); padding: 0.8rem 1rem;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imagens/logo.png" alt="Logo do site" width="40" height="40" class="d-inline-block align-text-top me-2">
+        <h1 class="h5 mb-0">Poisonous Life</h1>
+      </a>
 
-    <nav>
-        <ul>
-            <li><a href="#sessao1">Animais</a></li>
-            <li><a href="#sessao2">Sobre nós</a></li>
-            <li><a href="#sessao5">Contato</a></li>
-            <li><a href="#sessao6">Contato</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu">
+        <span class="navbar-toggler-">Menu</span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao1">Animais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao2">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao5">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao4">Profissionais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao6">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sessao7">Tabela de infos</a>
+          </li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
     <main>
         <section id="sessao2">
@@ -103,37 +132,63 @@
                   <button type="submit">Enviar</button>
                 </fieldset>
               </form>        
+              <form class="formulario">
+      <fieldset>
+        <legend>Escreva seu relato!</legend>
+        <label for="nome2">Nome:</label>
+        <input type="text" id="nome2" name="nome" required>
+
+        <label for="email2">E-mail:</label>
+        <input type="email" id="email2" name="email" required>
+
+        <label for="telefone2">Telefone:</label>
+        <input type="tel" id="telefone2" name="telefone">
+
+        <label for="servico2">Assunto:</label>
+        <select id="servico2" name="servico">
+          <option value="">Selecione</option>
+          <option value="detetizacao">Aranhas</option>
+          <option value="controle-pragas">Insetos</option>
+          <option value="limpeza">Outros...</option>
+        </select>
+
+        <label for="mensagem2">Conte seu relato:</label>
+        <textarea id="mensagem2" name="mensagem" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
             </div>
           </section>
 
-          <section id="sessao4">
-            <h2>💥 Profissionais para Detetização 💥</h2>
-            <div class="profissionais-container">
-          
-              <div class="profissional">
-                <div class="profissional-header">
-                  <img src="imagens/profissional1.jpg" alt="Anderson Costa">
-                  <h3>Anderson Costa</h3>
-                </div>
-                <p>Especialista em controle de aranhas e escorpiões com mais de 10 anos de experiência. Atua na detetização residencial e comercial garantindo ambientes seguros e livres de riscos.
+          <section id="sessao4" class="scroll-fade bg-white py-5" style="min-height: 100vh;">
+  <div class="container text-center">
+    <h2 class="mb-5">💥 Profissionais para Detetização 💥</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-5 mb-4">
+        <div class="profissional-card animar-profissional p-4 shadow rounded">
+          <div class="profissional-header mb-3">
+            <img src="imagens/profissional1.jpg" class="img-fluid rounded-circle mb-2" alt="Anderson Costa" style="width: 120px;">
+            <h3>Anderson Costa</h3>
+          </div>
+          <p>Especialista em controle de aranhas e escorpiões com mais de 10 anos de experiência. Atua na detetização residencial e comercial garantindo ambientes seguros e livres de riscos.<br><strong>(53) 99987-6541</strong></p>
+        </div>
+      </div>
 
-                    (53)99987-6541
-                </p>
-              </div>
-          
-              <div class="profissional">
-                <div class="profissional-header">
-                  <img src="imagens/profissional2.jpg" alt="Bruno Lima">
-                  <h3>Bruno Lima</h3>
-                </div>
-                <p>Profissional certificado em manejo integrado de pragas, com foco em prevenção e tratamentos seguros. Atendimento rápido e eficaz na sua região.
+      <div class="col-md-5 mb-4">
+        <div class="profissional-card animar-profissional p-4 shadow rounded">
+          <div class="profissional-header mb-3">
+            <img src="imagens/profissional2.jpg" class="img-fluid rounded-circle mb-2" alt="Bruno Lima" style="width: 120px;">
+            <h3>Bruno Lima</h3>
+          </div>
+          <p>Profissional certificado em manejo integrado de pragas, com foco em prevenção e tratamentos seguros. Atendimento rápido e eficaz na sua região.<br><strong>(53) 99190-7677</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    (53)99190-7677
-                </p>
-              </div>
-          
-            </div>
-          </section>
 
           <section id="sessao6">
             <h2>Galeria de Relatos</h2>
@@ -176,6 +231,71 @@
             
               </div>
           </section>
+
+          <section id="sessao7" class="scroll-fade bg-white py-5" style="min-height: 100vh;">
+  <div class="container">
+    <h2 class="mb-4 text-center">📸 Galeria de Animais Perigosos & Tabela de Riscos</h2>
+
+    <div id="carouselAnimais" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="imagens/aranha-armadeira.jpg" class="d-block w-100" alt="Aranha Armadeira">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/aranha-marrom.jpg" class="d-block w-100" alt="Aranha Marrom">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/escorpiao-amarelo.jpeg" class="d-block w-100" alt="Escorpião Amarelo">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAnimais" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAnimais" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Espécie</th>
+            <th>Tipo</th>
+            <th>Periculosidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Aranha Armadeira</td>
+            <td>Aranha</td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Aranha Marrom</td>
+            <td>Aranha</td>
+            <td>Média-Alta</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Escorpião Amarelo</td>
+            <td>Escorpião</td>
+            <td>Alta</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sessao8" class="logo-animada-section">
+  <div class="container text-center">
+    <h2>Espero que esteja alertado!</h2>
+    <img src="imagens/logo.png" alt="Logo do site" class="logo-animada">
+  </div>
+</section>
     </main>
 
     <footer>
