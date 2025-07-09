@@ -506,7 +506,7 @@ footer {
 
 section:not(:first-child) {
   animation-name: fadeInUp;
-  animation-duration: 0,5s;
+  animation-duration: 1s;
   animation-timeline: view();
   animation-fill-mode: forwards;
   opacity: 0;
